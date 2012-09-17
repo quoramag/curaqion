@@ -1,0 +1,102 @@
+@import "mixin";
+
+.btn{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	vertical-align: middle;
+	position: relative;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: normal bold 15px/100% "Helvetica Neue", Arial, "lucida grande", "trebuchet ms", helvetica, sans-serif;
+	padding: 12px 20px 12px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	margin: 2px;
+	color: #025355;
+	border: solid 1px #09ABAC;
+	border-bottom:2px solid #057F82;
+	background-color: #6BD9E4;
+	@include gradient(#A6E9F4,#7CD6E0);
+ 	@include box-shadow(0px 1px 0 rgba(255,255,255,0.35) inset);
+	@include rounded(3px);
+
+	&:active{
+		position: relative;
+		top:1px;
+	}
+	&.withicon{
+		padding-left: 15px;
+		padding-right: 25px;
+	}
+	i{
+		width: 17px;
+		height: 17px;
+		margin:0 15px 0 0;
+		background: #aaa;
+		line-height: 20px;
+		display: inline-block;
+		vertical-align: -3px;
+	}
+
+	&.green{
+		color: #004600;
+		border: solid 1px #769C3B;
+		border-bottom: 2px solid #608627;
+		background-color: #CBE39A;
+		@include gradient(#CBE39A,#ABCD70);
+	}
+
+	&.disabled{
+		cursor:default;
+		color: #A7A7A7;
+		border: solid 1px #B1B1B1;
+		border-bottom: 2px solid #B1B1B1;
+		background-color: #EEEEEE;
+		@include gradient(#E7E7E7,#E0E0E0);
+		&:active{
+			position: inherit;
+			top:0;
+		}
+	}
+}
+
+.side_control .withicon i,
+.segment-action.withicon i{
+	background: url("../img/btn-sprite.png") no-repeat 0 0;
+}
+#play-video{
+	&.green i{background-position: 0 2px;}
+	&.blue i{background-position: -18px 2px;}
+	&.disabled i{background-position: -37px 2px;}
+}
+#pause-video{
+	&.green i{background-position: 0 -16px;}
+	&.blue i{background-position: -18px -16px;}
+	&.disabled i{background-position: -37px -16px;}
+}
+#start-segment,
+#end-segment{
+	&.green i{background-position: 0 -35px;}
+	&.blue i{background-position: -19px -35px;}
+	&.disabled i{background-position: -38px -35px;}
+}
+
+#save-changes{
+	&.green i{background-position: 0 -54px;}
+	&.blue i{background-position: -19px -54px;}
+	&.disabled i{background-position: -38px -54px;}
+}
+#replay-segment{
+	&.green i{background-position: 0 -70px;}
+	&.blue i{background-position: -19px -70px;}
+	&.disabled i{background-position: -38px -70px;}
+}
+
+#delete-segment{
+	&.green i{background-position: 0 -88px;}
+	&.blue i{background-position: -19px -88px;}
+	&.disabled i{background-position: -38px -88px;}
+}
+

@@ -1,0 +1,57 @@
+$wrap : 820px;
+$sidecol : 300px;
+$bg-color: #FAF9F4;
+ 
+
+/*== CSS3 magics */
+@mixin rounded($radius: 10px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin box-shadow($syntax) {
+	box-shadow:$syntax;
+	-moz-box-shadow:$syntax;
+	-webkit-box-shadow:$syntax;
+}
+ 
+@mixin box-shadow-multi($param, $param2){
+	box-shadow:$param,$param2 ;
+	-moz-box-shadow:$param,$param2;
+	-webkit-box-shadow:$param,$param2;
+}
+
+@mixin gradient($from:#222, $to:#000) {
+	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background: -moz-linear-gradient(top,  $from,  $to);
+	//filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to');
+}
+ 
+
+@mixin animation($syntax) {
+  -webkit-animation: $syntax;
+     -moz-animation: $syntax;
+          animation: $syntax;
+}
+
+@mixin transform($syntax){
+-webkit-transform: $syntax;
+   -moz-transform: $syntax;
+   		transform: $syntax;
+}
+
+@mixin scale($syntax) {
+  -webkit-transform: scale($syntax);
+     -moz-transform: scale($syntax);
+      -ms-transform: scale($syntax);
+       -o-transform: scale($syntax);
+          transform: scale($syntax);
+}
+
+@mixin transition($syntax) {
+	transition: $syntax;
+	-moz-transition: $syntax;
+	-webkit-transition: $syntax;
+	-o-transition: $syntax;
+}

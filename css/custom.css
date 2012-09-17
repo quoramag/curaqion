@@ -1,0 +1,157 @@
+/*== CSS3 magics */
+body {
+  background-color: #faf9f4;
+  font-size: 13px;
+  line-height: 17px; }
+
+.hide {
+  display: none !important; }
+
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+* html .clearfix {
+  height: 1%;
+  overflow: visible; }
+
+/* float clearing for IE7 */
+* + html .clearfix {
+  min-height: 1%; }
+
+/* float clearing for everyone else */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0; }
+
+.wrap {
+  width: 820px;
+  margin: 0 auto; }
+
+header {
+  background: #333;
+  overflow: hidden;
+  margin: 30px auto;
+  width: 820px; }
+  header #brand {
+    margin: 0; }
+    header #brand a {
+      color: #eee;
+      float: left;
+      margin: 0;
+      background: #222222 url("../img/brand.png") no-repeat 25px center;
+      text-indent: -9999px;
+      height: 50px;
+      width: 300px;
+      display: block; }
+
+.desc {
+  width: 240px;
+  padding: 25px 30px 15px 30px;
+  color: #555; }
+  .desc p {
+    margin-right: 10px;
+    font-size: 13px; }
+
+.issue_id {
+  font-size: 50px;
+  line-height: 54px;
+  margin: 0;
+  font-family: "myriad pro";
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #222; }
+
+.issue_month {
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+  color: #666;
+  margin: 0 0 20px;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+#issue_1 {
+  background: url("http://24.media.tumblr.com/tumblr_m7cau9A83h1rs4d45o1_500.jpg") no-repeat -125px top;
+  background-size: contain; }
+
+.main_issue {
+  background: #fff;
+  border: 1px solid #CCCCCC; }
+  .main_issue .article {
+    width: 518px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fff; }
+    .main_issue .article li {
+      overflow: hidden;
+      position: relative;
+      height: 130px; }
+      .main_issue .article li:last-child {
+        margin-bottom: 0; }
+      .main_issue .article li:nth-child(2n) {
+        background: #F8F8F8; }
+      .main_issue .article li:hover h2 {
+        color: #222; }
+    .main_issue .article .imgwrap {
+      float: left;
+      position: relative;
+      width: 100px;
+      height: 130px;
+      margin: 0;
+      overflow: hidden;
+      background: #000; }
+      .main_issue .article .imgwrap img {
+        margin: -20px 0 0 -30px;
+        opacity: 0.7; }
+      .main_issue .article .imgwrap em {
+        position: absolute;
+        top: 58px;
+        width: 100px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        font-style: normal;
+        font-weight: bold; }
+    .main_issue .article .titlewrap {
+      padding: 15px 20px;
+      width: 375px;
+      float: left; }
+      .main_issue .article .titlewrap span {
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+        display: block;
+        color: #aaa; }
+    .main_issue .article h2 {
+      margin: 0;
+      right: 1px;
+      color: #333;
+      font: 17px/26px "Open Sans", "myriad pro", sans-serif; }
+    .main_issue .article a {
+      text-decoration: none; }
+
+footer {
+  margin: 30px auto 50px;
+  width: 820px;
+  overflow: hidden; }
+  footer strong {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px; }
+  footer .credit {
+    width: 255px; }
+  footer .subscribe {
+    width: 520px; }
