@@ -56,22 +56,42 @@ header {
 
 .desc {
   width: 300px;
-  padding: 25px 30px 95px 30px;
-  color: #555; }
+  padding: 0px 30px 95px 30px;
+  color: #555;
+  opacity: 0;
+  z-index: 3;
+  position: relative; }
   .desc p {
     font-family: "Open Sans",sans-serif;
     font-size: 14px;
     line-height: 21px;
     margin-right: 25px; }
-  .desc.withgradient {
-    background: rgba(0, 0, 0, 0.5);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-    color: #eee; }
-    .desc.withgradient .issue_id {
-      color: #fff; }
-    .desc.withgradient .issue_month {
-      color: #eee; }
+  .desc.loaded {
+    padding-top: 20px;
+    opacity: 1;
+    transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear; }
+
+.withgradient:after {
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); }
+.withgradient .desc {
+  color: #EEEEEE; }
+.withgradient .issue_id {
+  color: #fff; }
+.withgradient .issue_month {
+  color: #eee; }
 
 .issue_id {
   font-size: 50px;
@@ -91,18 +111,46 @@ header {
   font-weight: bold; }
 
 #issue_1 {
-  background: url("http://farm3.staticflickr.com/2290/1602147302_7a304915b9.jpg") no-repeat -56px 0;
+  background: url("http://farm3.staticflickr.com/2290/1602147302_7a304915b9.jpg") repeat-x -56px 0;
   background-size: contain; }
 
 .main_issue {
   background: #fff;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .main_issue.preload .loading {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #faf9f4 url("../img/loading.gif") no-repeat center;
+    top: 0;
+    left: 0; }
+  .main_issue.preload .desc,
+  .main_issue.preload .article,
+  .main_issue.preload .photo_credit, .main_issue.preload.withgradient:after {
+    visibility: hidden; }
+  .main_issue.loaded .loading {
+    display: none; }
+  .main_issue.loaded .desc,
+  .main_issue.loaded .article,
+  .main_issue.loaded .photo_credit, .main_issue.loaded.withgradient:after {
+    visibility: visible; }
   .main_issue .article {
     width: 510px;
-    margin: 0;
+    margin: 0 -30px 0 0;
     padding: 0;
     list-style: none;
-    background: #fff; }
+    background: #fff;
+    opacity: 0.8;
+    position: relative;
+    z-index: 2; }
+    .main_issue .article.loaded {
+      margin-right: 0;
+      opacity: 1;
+      transition: all 0.4s linear;
+      -moz-transition: all 0.4s linear;
+      -webkit-transition: all 0.4s linear;
+      -o-transition: all 0.4s linear; }
     .main_issue .article li {
       overflow: hidden;
       position: relative;
@@ -152,7 +200,7 @@ header {
     font-size: 10px;
     left: 30px;
     margin: 0;
-    padding: 0 10px 1px;
+    padding: 2px 10px 2px;
     position: absolute;
     color: #aaa; }
     .main_issue .photo_credit a {
