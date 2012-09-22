@@ -9,26 +9,7 @@ body{
 .fleft{float:left;}
 .fright{float:right}
 .clear{clear:both;}
-* html .clearfix{
-  height: 1%;
-  overflow: visible;
-}
-
-/* float clearing for IE7 */
-*+html .clearfix{
-  min-height: 1%;
-}
-
-/* float clearing for everyone else */
-.clearfix:after{
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-  font-size: 0;
-}
-
+p{margin: 0 0 1em;}
 
 
 
@@ -126,24 +107,16 @@ header{
 	font-weight: bold;
 }
 
-
-#issue_1{
-	//background: url("http://24.media.tumblr.com/tumblr_m7cau9A83h1rs4d45o1_500.jpg") no-repeat -65px 0;
-	background: url("http://farm3.staticflickr.com/2290/1602147302_7a304915b9.jpg") repeat-x -56px 0;
-	background-size:contain;
-}
-
-
 .main_issue{
-	background: #fff;
+	background-color: $border-color;
 	position:relative;
 	overflow: hidden;
 	&.preload{
-		.loading{
+ 		.loading{
 			position:absolute;
 			height: 100%;
 			width: 100%;
-			background: $bg-color url('../img/loading.gif') no-repeat center;
+			background:  $bg-color url('../img/loading.gif') no-repeat center 50px ;
 			top:0;
 			left:0;
 		}
@@ -155,7 +128,8 @@ header{
  		}
 	}
 	&.loaded{
-		.loading{
+		border-right:1px solid $border-color;
+ 		.loading{
 			display: none;
 		}
   		.desc,
@@ -167,23 +141,20 @@ header{
 	}
 
   	.article{
- 		width: $wrap - $sidecol;
+ 		width: $wrap - $sidecol - 1px;
  		margin: 0 -30px 0 0;
  		padding: 0;
  		list-style: none;
  		background: #fff;
- 		opacity:0.8;
- 		position:relative;
+  		position:relative;
  		z-index:2;
  		&.loaded{
  			margin-right:0;
- 			opacity:1;
-			@include transition(all 0.4s linear);
+ 			@include transition(margin 0.4s linear);
  		}
    		li{
  			overflow: hidden;
  			position: relative;
-  			border-right:1px solid $border-color;
  			background-repeat:no-repeat;
  			background-position: top left;
 
@@ -268,6 +239,67 @@ header{
     	}
 	}
 }
+
+
+
+.article{
+	.leftside{
+		width: 200px;
+		float: left;
+		text-align:right;
+	}
+	.rightside{
+		width: $wrap - 200px - 120px;
+		float: right;
+		margin-right: 70px;
+ 	}
+	.cover{
+		position:relative;
+		h1{
+  			color:#fff;
+			line-height: 33px;
+			font-size: 25px;
+ 			margin:0 0 30px;
+ 		}
+	}
+	.overmeta{
+		position:absolute;
+		bottom:0;
+		width: $wrap;
+	}
+
+	.answers{
+		background:#fff;
+		border:1px solid $border-color;
+		.rightside,
+		.leftside{
+			padding:30px 0;
+		}
+		.rightside{
+			font-family: Georgia,serif;
+			font-size: 15px;
+			line-height: 23px;
+
+			p{
+				&:first-of-type{
+					font-size: 16px;
+					line-height: 23px;
+					&:first-letter{
+						float: left;
+ 						font-size: 300%;
+						line-height: 0.85em;
+						margin: 6px 6px 2px 0;
+					}
+				}
+			}
+		}
+		.fullwidth{
+			margin: 0 0 15px -249px;
+		}
+	}
+}
+
+
 
 
 
