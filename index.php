@@ -10,7 +10,7 @@
 	<p class="photo_credit">&copy; Original photo by <a target="_blank" href="http://www.flickr.com/photos/spacequeen/">Space Queen</a></p>
 
 	<ul class="article fright">
-		<li style="background-image:url('img/01/facebook.png');">
+		<li style="background-image:url('img/01/facebook-small.jpg');">
 			<a href="issue/01/facebook-growth.php">
 				<em>01.</em>
     			<div class="titlewrap">
@@ -19,8 +19,8 @@
     			</div>
 			</a>
 		</li>
-		<li style="background-image:url('img/01/color.png');">
-			<a href="#">
+		<li style="background-image:url('img/01/color-small.jpg');">
+			<a href="issue/01/science-in-picking-colors-for-design.php">
 				<em>02.</em>
     			<div class="titlewrap">
     				<span>Technology</span>

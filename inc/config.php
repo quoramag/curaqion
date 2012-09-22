@@ -1,6 +1,9 @@
 <?php
 
-$fullpath = "http://gaddafi.local/~flisterz/curaqion";
-//$fullpath = "http://curaqion.com";
+//PRODUCTION
+//$rootpath = "http://curaqion.com"
+
+//DEVELOPMENT
+$rootpath = "http://gaddafi.local/~flisterz/curaqion"
 
 ?>

@@ -9,6 +9,11 @@ body{
 .fleft{float:left;}
 .fright{float:right}
 .clear{clear:both;}
+.aright{text-align:right;}
+.aleft{text-align:left;}
+.acenter{text-align:center;}
+.last{margin-right:0 !important;}
+.nomar{margin: 0 !important;}
 p{margin: 0 0 1em;}
 
 
@@ -21,8 +26,10 @@ p{margin: 0 0 1em;}
 header{
 	background:#333 ;
 	overflow: hidden;
-	margin: 30px auto;
+	margin: 30px auto 0;
 	width: $wrap;
+ 	@include rounded(2px);
+
 	#brand{
 		margin: 0;
 		a{
@@ -34,13 +41,91 @@ header{
 			height: 50px;
 			width: $sidecol;
 			display: block;
-			//opacity: 0.8;
+		 	@include rounded(2px);
+
 			&:hover{
 			//	opacity: 1;
 			}
 		}
 	}
 }
+
+
+.content-nav{
+   	width: $wrap;
+   	margin-top: 15px;
+   	p{
+   		float: left;
+   		font-size: 15px;
+   	}
+	ul{
+		list-style: none;
+		padding:0;
+		margin:0;
+		float: right;
+		width: $wrap - $sidecol;
+		position:relative;
+
+	}
+	li{
+		float: left;
+		a{
+			padding: 10px 0 10px 2px;
+			text-align:center;
+			width: (($wrap - $sidecol)/10) - 2px;
+ 			display:block;
+ 			text-decoration:none;
+ 			font-weight: bold;
+ 			color:#BBBBB8;
+ 			position:relative;
+			&:hover{
+   				background:#E7E6E3;
+   				color:#585959;
+			}
+			&.current{
+				background: #ccc;
+				color:#333;
+			}
+			&.hovering{
+				&:after{
+					border-bottom: 8px solid #FFF;
+					border-left: 8px solid transparent;
+					border-right: 8px solid transparent;
+					bottom: -14px;
+					content: "";
+					display: block;
+					left: 40%;
+					position: absolute;
+					z-index: 2;
+				}
+			}
+		}
+	}
+	.preview{
+		background-color:#fff;
+		position: absolute;
+		width: $wrap - $sidecol - 25px;
+		z-index: 2;
+		left:0;
+ 		padding: 7px;
+		top:50px;
+		@include rounded(2px);
+		.title{
+			overflow:hidden;
+			p{
+				float: right;
+				width: $wrap - $sidecol - 45px - 80px;
+				padding:5px 0 5px 10px;
+				background:#fff;
+				margin: 0;
+				font-size: 15px;
+				line-height: 20px;
+
+			}
+		}
+ 	}
+}
+
 
 .desc{
     width: $sidecol - 30px - 30px;
@@ -67,7 +152,7 @@ header{
 	&:after{
     	content: "";
     	display: block;
-    	height: 50%;
+    	height: 60%;
     	left: 0;
     	position: absolute;
     	top: 0;
@@ -111,6 +196,9 @@ header{
 	background-color: $border-color;
 	position:relative;
 	overflow: hidden;
+	margin-top:30px;
+	@include rounded(2px);
+
 	&.preload{
  		.loading{
 			position:absolute;
@@ -193,7 +281,7 @@ header{
 		}
  		.titlewrap{
  			padding: 13px 20px 17px 20px;
-   			width: $wrap - $sidecol - 100px - 20px - 20px - 3px;
+   			width: $wrap - $sidecol - 100px - 20px - 20px - 1px;
 		 	float: right;
 	 		//height: 90px;
 	 		background:#fff;
@@ -222,84 +310,191 @@ header{
 			}
 		}
 	}
-	.photo_credit{
-    	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
-    	bottom: 0;
-    	font-size: 10px;
-    	left: 30px;
-    	margin: 0;
-    	padding: 2px 10px 2px;
-    	position: absolute;
-    	color:#aaa;
-    	a{
-    		color:#aaa;
-    		&:hover{
-    			color:#ddd;
-    		}
-    	}
+}
+
+.photo_credit{
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+	bottom: 0;
+	font-size: 10px;
+	left: 30px;
+	margin: 0;
+	padding: 3px 10px 2px;
+	position: absolute;
+	color:#aaa;
+	a{
+		color:#aaa;
+		&:hover{
+			color:#ddd;
+		}
 	}
 }
 
 
-
 .article{
 	.leftside{
-		width: 200px;
+		width: $leftside;
 		float: left;
 		text-align:right;
+		img{
+			height: 50px;
+			width: 50px;
+			border: 5px solid #fff;
+			@include rounded(2px);
+		}
 	}
 	.rightside{
-		width: $wrap - 200px - 120px;
+		width: $wrap - $leftside - 120px;
 		float: right;
 		margin-right: 70px;
  	}
 	.cover{
 		position:relative;
+		@include rounded(2px 2px 0 0);
+		overflow:hidden;
+		height: 270px;
+		background:#333;
 		h1{
   			color:#fff;
-			line-height: 33px;
-			font-size: 25px;
- 			margin:0 0 30px;
+			line-height: 35px;
+			font-size: 27px;
+ 			margin:0 0 50px;
+ 		}
+ 		.photo_credit{
+ 			right:0;
+ 			left: auto;
  		}
 	}
 	.overmeta{
 		position:absolute;
 		bottom:0;
 		width: $wrap;
+		background: url("../img/sideline-white.gif") repeat-y 150px 0;;
 	}
 
 	.answers{
-		background:#fff;
+		background:#fff url("../img/sideline.gif") repeat-y 149px 0;;
 		border:1px solid $border-color;
+		border-top:0;
 		.rightside,
 		.leftside{
 			padding:30px 0;
 		}
+		.leftside{
+ 		}
 		.rightside{
 			font-family: Georgia,serif;
 			font-size: 15px;
 			line-height: 23px;
-
-			p{
-				&:first-of-type{
-					font-size: 16px;
-					line-height: 23px;
-					&:first-letter{
-						float: left;
- 						font-size: 300%;
-						line-height: 0.85em;
-						margin: 6px 6px 2px 0;
-					}
+			.intro{
+				font-size: 17px;
+				line-height: 25px;
+				margin-bottom: 30px;
+				&:first-letter{
+					float: left;
+ 					font-size: 300%;
+					line-height: 0.85em;
+					margin: 6px 6px 2px 0;
 				}
 			}
 		}
 		.fullwidth{
-			margin: 0 0 15px -249px;
+			margin-bottom: 15px;
+			margin-left: -229px;
+			width: $wrap ;
+			img{
+				width: $wrap ;
+			}
+			&.twocolumn,
+			&.threecolumn{
+				width:$wrap;
+			}
+			&.threecolumn{
+				.col{
+					width: ($wrap/3) - 20px ;
+ 					padding-top: 15px;
+				}
+			}
+
+		}
+		.twocolumn{
+			width: $wrap - $leftside;
+			margin:20px 0 20px;
+			.col{
+				float: left;
+			}
+			.shaded{
+				background:#fff;
+				padding: 20px;
+				border:1px solid $border-color;
+			}
+			.smallcol{
+				width: 37%;
+			}
+			.medcol{
+				width: 48%;
+			}
+			.bigcol{
+				width: 60%;
+			}
+		}
+		.threecolumn{
+			width: $wrap - $leftside + 50px;
+			.col{
+				float: left;
+				width: (($wrap - $leftside + 50px)/3) - 20px;
+				margin-right:30px;
+				overflow: hidden;
+
+			}
+			img{
+				width: 100%;
+			}
+			strong{
+				display: block;
+				margin: 10px 0;
+			}
+		}
+
+		.profiler{
+			background:#fff;
+			width: 300px;
+			margin: 5px 0 0 30px;
+ 			img{
+				//width: 100%;
+ 				@include box-shadow(0 0 0 transparent);
+			}
+			span{
+				border:1px solid $border-color;
+				border-bottom:0;
+				text-transform: uppercase;
+				padding: 5px 15px;
+				display:block;
+			}
+			.info{
+				border:1px solid $border-color;
+				border-top:0;
+				padding: 15px;
+			}
+
+
+		}
+
+		.authorinfo{
+			background: #fff;
+			padding: 0 0 10px 30px;
+			font-size:11.5px;
+			line-height: 16px;
+			img{
+				border-color: #E3E2E0;
+			}
+			strong{
+				margin: 10px 0;
+				font-weight: bold;
+				display: block;
+			}
 		}
 	}
 }
-
-
 
 
 
@@ -311,12 +506,69 @@ footer{
 	    text-transform: uppercase;
 	    letter-spacing: 2px;
 	    font-size: 12px;
+	    margin-bottom: 10px;
+	    display:block;
 	}
 
 	.credit{
-		width: $sidecol  - 45px ;
+		width: $sidecol - 40px;
 	}
+	.disclaimer{
+		margin: 20px 0 0;
+		color:#eee;
+		float:left;
+  	}
 	.subscribe{
-		width: $wrap - $sidecol ;
+		width: $wrap - $sidecol  ;
+		label{
+			width: 200px;
+			float: left;
+		}
+		p{
+			float: left;
+		}
+		input[type="text"]{
+			background: none repeat scroll 0 0 #FFFFFF;
+			border: 1px solid $border-color;
+			float: left;
+			margin: 2px  4px 0 0;
+			padding: 8px 10px;
+			width: 200px;
+		}
+		input[type="submit"]{
+			background: none repeat scroll 0 0 #333333;
+			border: 0 none;
+			color: #FFFFFF;
+			float: left;
+			font-size: 11px;
+			height: 31px;
+			margin: 2px 0 0;
+			padding: 10px 10px 11px;
+			text-transform: uppercase;
+			@include rounded(2px);
+		}
 	}
 }
+
+.tipsy { font-size: 12px; position: absolute; padding: 5px; z-index: 100000; }
+  .tipsy-inner { background-color: #000;color: #fff; max-width: 350px; padding: 10px 8px 9px 8px; text-align: center; }
+
+  /* Rounded corners */
+  .tipsy-inner { @include rounded(3px); }
+
+   .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #000; }
+  .tipsy-arrow-s { border-top-color: #000; }
+  .tipsy-arrow-e { border-left-color: #000; }
+  .tipsy-arrow-w { border-right-color: #000; }
+
+	.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }

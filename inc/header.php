@@ -10,22 +10,24 @@
     <title>c u r a q i o n</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="<?php echo $fullpath ?>/css/normalize.css">
-    <link rel="stylesheet" href="<?php echo $fullpath ?>/css/main.css">
-    <link rel="stylesheet" href="<?php echo $fullpath ?>/css/custom.css">
-    <link rel="stylesheet" href="<?php echo $fullpath ?>/css/issues.css">
+    <link rel="stylesheet" href="<?php echo $rootpath ?>/css/normalize.css">
+    <link rel="stylesheet" href="<?php echo $rootpath ?>/css/main.css">
+    <link rel="stylesheet" href="<?php echo $rootpath ?>/css/custom.css">
+    <link rel="stylesheet" href="<?php echo $rootpath ?>/css/issues.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script src="<?php echo $fullpath ?>/js/vendor/modernizr-2.6.1.min.js"></script>
-     <script>window.jQuery || document.write('<script src="<?php echo $fullpath ?>/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-    <script src="j<?php echo $fullpath ?>/s/plugins.js"></script>
-     <script src="<?php echo $fullpath ?>/js/main.js"></script>
+    <script src="<?php echo $rootpath ?>/js/vendor/modernizr-2.6.1.min.js"></script>
+     <script>window.jQuery || document.write('<script src="<?php echo $rootpath ?>/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+    <script src="j<?php echo $rootpath ?>/js/plugins.js"></script>
+     <script src="<?php echo $rootpath ?>/js/vendor/jquery.tipsy.js"></script>
+
+     <script src="<?php echo $rootpath ?>/js/main.js"></script>
 </head>
 <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
     <header>
-        <p id="brand"><a href="#">curaqion</a></p>
+        <p id="brand"><a href="<?php echo $rootpath ?>">curaqion</a></p>
     </header>
 
     <div id="content" class="wrap">
