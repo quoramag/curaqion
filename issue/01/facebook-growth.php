@@ -17,6 +17,7 @@
 				<p class="photo_credit">&copy; Original photo by <a target="_blank" href="http://www.facebook.com/note.php?note_id=469716398919">Facebook</a></p>
 			</div>
 		</div>
+		<?php include '../../inc/social.php' ?>
 		<div class="answers clearfix">
 			<div class="leftside">
 				<div class="authorinfo">
