@@ -7,7 +7,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>curaqion.</title>
+    <title>
+        <?php if (isset($title)) {
+            echo $title.' - curaqion.';
+        } else {
+            echo "curaqion.";
+        } ?>
+    </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="<?php echo $rootpath ?>/css/normalize.css">
@@ -16,11 +22,11 @@
     <link rel="stylesheet" href="<?php echo $rootpath ?>/css/issues.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <script src="<?php echo $rootpath ?>/js/vendor/modernizr-2.6.1.min.js"></script>
-     <script>window.jQuery || document.write('<script src="<?php echo $rootpath ?>/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="<?php echo $rootpath ?>/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
     <script src="j<?php echo $rootpath ?>/js/plugins.js"></script>
-     <script src="<?php echo $rootpath ?>/js/vendor/jquery.tipsy.js"></script>
-
-     <script src="<?php echo $rootpath ?>/js/main.js"></script>
+    <script src="<?php echo $rootpath ?>/js/main.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/vlb5bib.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
     <!--[if lt IE 7]>

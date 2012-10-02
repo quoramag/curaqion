@@ -1,7 +1,9 @@
+<?php $title ="Is there a science to picking the colors ... or is it just subjective?"; ?>
 <?php include '../../inc/header.php' ?>
 <script type="text/javascript">
 	var current = 'two';
 </script>
+
 <?php include 'nav.php' ?>
 
 	<div class="article">
@@ -95,7 +97,40 @@
 
 				<p>Yellow and green have very light values. So using yellow or green text on a white background would be difficult to read. Yellow would work well on a dark grey or black background, which would explain why most road warning signs are yellow and black.</p>
 
-<br><div><img class="qtext_image zoomable_in_feed" src="http://qph.cf.quoracdn.net/main-qimg-4b113b16b2ee1f333f580173d1506367" master_src="http://qph.cf.quoracdn.net/main-qimg-4b113b16b2ee1f333f580173d1506367" master_w="485" master_h="80"></div><br>Blue and purple have dark color values, so these would work well on a white background, but not so good on a dark background.<br><br><div><img class="qtext_image zoomable_in_feed" src="http://qph.cf.quoracdn.net/main-qimg-e24f3931e0e3d83ceb2e66c2da158470" master_src="http://qph.cf.quoracdn.net/main-qimg-e24f3931e0e3d83ceb2e66c2da158470" master_w="485" master_h="80"></div><br><b>Example</b><br>So let's say a client has come to me looking for a logo for her new company. She is starting a beauty spa which uses natural, organic products.<br><br>I know her target market is women and she is trying to convey a peaceful message, rather than an energetic one. So I know tints are the best route to take, as opposed to pure colors or shades.<br><br>Good colors to convey beauty, tranquility, peacefulness and femininity would include pink, yellow, purple and blue.<br><br><div><img class="qtext_image zoomable_in_feed" src="http://qph.cf.quoracdn.net/main-qimg-eb73eb3182c8158794860fe079b1d8fb" master_src="http://qph.cf.quoracdn.net/main-qimg-eb73eb3182c8158794860fe079b1d8fb" master_w="485" master_h="80"></div><br>However, she really wants to drive home the fact that all her products are organic.<br><br>So I'd like to use green, as green conveys thoughts of freshness and the environment.<br><br><div><img class="qtext_image zoomable_in_feed" src="http://qph.cf.quoracdn.net/main-qimg-f205afd5ad1024af0ad2fc1cfd4950a9" master_src="http://qph.cf.quoracdn.net/main-qimg-f205afd5ad1024af0ad2fc1cfd4950a9" master_w="485" master_h="80"></div><br>Now green is not the most feminine color, but we know that tints are feminine. So by using a green tint, we will be able to capture the organic, fresh feel of the green and the femininity of tints.<br><br><div><img class="qtext_image zoomable_in_feed" src="http://qph.cf.quoracdn.net/main-qimg-fa5b34e139028b9fad656cb624fe604c" master_src="http://qph.cf.quoracdn.net/main-qimg-fa5b34e139028b9fad656cb624fe604c" master_w="485" master_h="80"></div><br>I also want to convey a feeling of tranquility, which we know comes from blue. So by blending tints of green and blue, we end up with a tranquil, cyan tint, suitable for our organic beauty spa aimed at the feminine market.<br><br><div><img class="qtext_image zoomable_in_feed" src="http://qph.cf.quoracdn.net/main-qimg-6b94e77902882a7960b29ab72a7bb976" master_src="http://qph.cf.quoracdn.net/main-qimg-6b94e77902882a7960b29ab72a7bb976" master_w="485" master_h="159"></div><br><b>Science vs Subjective</b><br>Now of course there will always be people who think it's purely subjective. Some people might think that using a dark red shade for my client's logo background, with a dark purple shade for the logo text looks fantastic.....<br><div><img class="qtext_image zoomable_in_feed" src="http://qph.cf.quoracdn.net/main-qimg-48c218f63732df1918c82e7cb6174ed2" master_src="http://qph.cf.quoracdn.net/main-qimg-48c218f63732df1918c82e7cb6174ed2" master_w="485" master_h="160"></div>However, I would have to argue that they are wrong.<br><br>There will always be exceptions, logos, designs, companies etc that defy all the rules and succeed in spite of it. But if you want to increase your design's chances of success, learn color theory.
+<p><img src="http://qph.cf.quoracdn.net/main-qimg-4b113b16b2ee1f333f580173d1506367" />
+</p>
+<p>Blue and purple have dark color values, so these would work well on a white background, but not so good on a dark background</p>
+<p><img src="http://qph.cf.quoracdn.net/main-qimg-e24f3931e0e3d83ceb2e66c2da158470"/></p>
+<h2>Example</h2>
+<p>So let's say a client has come to me looking for a logo for her new company. She is starting a beauty spa which uses natural, organic products.</p>
+
+<p>I know her target market is women and she is trying to convey a peaceful message, rather than an energetic one. So I know tints are the best route to take, as opposed to pure colors or shades.</p>
+
+<p>Good colors to convey beauty, tranquility, peacefulness and femininity would include pink, yellow, purple and blue.</p>
+
+<p><img src="http://qph.cf.quoracdn.net/main-qimg-eb73eb3182c8158794860fe079b1d8fb"/></p>
+
+<p>However, she really wants to drive home the fact that all her products are organic.</p>
+
+<p>So I'd like to use green, as green conveys thoughts of freshness and the environment.</p>
+<p><img src="http://qph.cf.quoracdn.net/main-qimg-f205afd5ad1024af0ad2fc1cfd4950a9" /></p>
+
+<p>Now green is not the most feminine color, but we know that tints are feminine. So by using a green tint, we will be able to capture the organic, fresh feel of the green and the femininity of tints.</p>
+
+<p><img src="http://qph.cf.quoracdn.net/main-qimg-fa5b34e139028b9fad656cb624fe604c" /></p>
+
+<p>I also want to convey a feeling of tranquility, which we know comes from blue. So by blending tints of green and blue, we end up with a tranquil, cyan tint, suitable for our organic beauty spa aimed at the feminine market.</p>
+
+<p><img src="http://qph.cf.quoracdn.net/main-qimg-6b94e77902882a7960b29ab72a7bb976"/></p>
+
+<h2>Science vs Subjective</h2>
+<p>Now of course there will always be people who think it's purely subjective. Some people might think that using a dark red shade for my client's logo background, with a dark purple shade for the logo text looks fantastic.....</p>
+
+<p><img src="http://qph.cf.quoracdn.net/main-qimg-48c218f63732df1918c82e7cb6174ed2" /></p>
+
+<p>However, I would have to argue that they are wrong.</p>
+
+<p>There will always be exceptions, logos, designs, companies etc that defy all the rules and succeed in spite of it. But if you want to increase your design's chances of success, learn color theory.</p>
 
 			</div>
 

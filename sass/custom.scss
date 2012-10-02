@@ -55,8 +55,9 @@ header{
    	width: $wrap;
    	margin-top: 15px;
    	p{
-   		float: left;
-   		font-size: 15px;
+    	float: left;
+    	font: 600 20px/26px "myriad pro",sans-serif;
+    	margin: 4px 0 0;
    	}
 	ul{
 		list-style: none;
@@ -72,7 +73,7 @@ header{
 		a{
 			padding: 10px 0 10px 2px;
 			text-align:center;
-			width: (($wrap - $sidecol)/10) - 2px;
+			width: (($wrap - $sidecol)/8) - 2px;
  			display:block;
  			text-decoration:none;
  			font-weight: bold;
@@ -136,8 +137,8 @@ header{
     position:relative;
 	//@include transition(all 1s linear);
     p{
-    	font-family: "Open Sans",sans-serif;
-    	font-size: 14px;
+		font-family: "ff-tisa-web-pro", Georgia,serif;
+     	font-size: 16px;
     	line-height: 21px;
     	margin-right: 25px;
 	}
@@ -174,13 +175,9 @@ header{
 
 
 .issue_id{
-	font-size: 50px;
-	line-height: 54px;
-	margin: 0;
-	font-family: "myriad pro";
-	font-weight: 700;
-	//letter-spacing: -1px;
-	color:#222;
+ 	margin: 0;
+	font: 700 50px/54px "myriad pro", sans-serif;
+ 	color:#222;
 }
 .issue_month{
 	font-size: 11px;
@@ -299,7 +296,7 @@ header{
  			margin: 0;
  			right:  1px;
    			color: #333;
- 			font:  16px/23px "Open Sans","myriad pro",sans-serif;
+ 			font:  400 18px/24px "myriad pro",sans-serif;
  		}
 		a{
 		 	text-decoration: none;
@@ -355,10 +352,9 @@ header{
 		height: 270px;
 		background:#333;
 		h1{
-  			color:#fff;
-			line-height: 35px;
-			font-size: 27px;
- 			margin:0 0 50px;
+			color: #FFFFFF;
+			font: 600 33px/39px "myriad pro",sans-serif;
+			margin: 0 0 65px;
  		}
  		.photo_credit{
  			right:0;
@@ -384,9 +380,11 @@ header{
 		.leftside{
  		}
 		.rightside{
-			font-family: Georgia,serif;
+			font-family: "ff-tisa-web-pro", Georgia,serif;
 			font-size: 15px;
 			line-height: 23px;
+			color: #222;
+
 			.intro{
 				font-size: 17px;
 				line-height: 25px;

@@ -29,7 +29,7 @@ $(document).ready(function() {
 });
 </script>
  <div class="content-nav clearfix">
- 	<p>Issue #001</p>
+ 	<p class="issueno">Issue #001</p>
 	<ul>
 		<li class="one">
 			<a class="tips" title="What are some decisions taken by the “Growth team” at Facebook that helped Facebook reach 500 million users?" href="facebook-growth.php">01.</a>
@@ -48,15 +48,15 @@ $(document).ready(function() {
  			</div>
 		</li>
 		<li class="three">
-			<a href="#">03.</a>
+			<a href="the-most-beautiful-number.php">03.</a>
 			<div class="preview hide">
-				<div class="title" style="background-image:url('../../img/01/facebook-small.jpg');">
+				<div class="title" style="background-image:url('../../img/01/number-small.jpg');">
 					<p>What is the most beautiful number, and why?</p>
  				</div>
  			</div>
 		</li>
 		<li class="four">
-			<a href="#">04.</a>
+			<a href="when-to-leave-your-current-company.php">04.</a>
 			<div class="preview hide">
 				<div class="title" style="background-image:url('../../img/01/facebook-small.jpg');">
 					<p>How do you know when it's time to leave your current company and move on?</p>
@@ -64,25 +64,36 @@ $(document).ready(function() {
  			</div>
 		</li>
 		<li class="five">
-			<a href="#">05.</a>
+			<a href="great-stories-about-steve-jobs.php">05.</a>
 			<div class="preview hide">
-				<div class="title" style="background-image:url('../../img/01/facebook-small.jpg');">
+				<div class="title" style="background-image:url('../../img/01/stevejobs-small.jpg');">
 					<p>What are some great stories about Steve Jobs?</p>
  				</div>
  			</div>
 		</li>
-		<li class="six"><a href="#">06.</a></li>
-		<li class="seven"><a href="#">07.</a></li>
-		<li class="eight"><a href="#">08.</a></li>
-		<li class="nine"><a href="#">09.</a></li>
-		<li class="ten">
-			<a href="#">10.</a>
+		<li class="six">
+			<a href="homeless-good-strategy-to-cut-costs.php">06.</a>
 			<div class="preview hide">
-				<div class="title" style="background-image:url('../../img/01/facebook-small.jpg');">
-					<p>What are some decisions taken by the “Growth team” at Facebook that helped Facebook reach 500 million users?</p>
+				<div class="title" style="background-image:url('../../img/01/homeless-small.jpg');">
+					<p>Would becoming homeless be a good strategy to cut costs?</p>
  				</div>
  			</div>
-
+		</li>
+		<li class="seven">
+			<a href="being-a-sniper.php">07.</a>
+			<div class="preview hide">
+				<div class="title" style="background-image:url('../../img/01/sniper-small.jpg');">
+					<p>What is it like to be a sniper?</p>
+ 				</div>
+ 			</div>
+		</li>
+ 		<li class="eight">
+			<a href="michael-jackson-get-surgery-to-turn-white.php">08.</a>
+			<div class="preview hide">
+				<div class="title" style="background-image:url('../../img/01/mj-small.jpg');">
+					<p>Why did Michael Jackson get surgery to turn white?</p>
+ 				</div>
+ 			</div>
 		</li>
 
 	</ul>

@@ -26,8 +26,8 @@
     			</div>
 			</a>
 		</li>
-		<li style="background-image:url('img/01/other.png');">
-			<a href="#">
+		<li style="background-image:url('img/01/number-small.jpg');">
+			<a href="issue/01/the-most-beautiful-number.php">
     		<div class="titlewrap">
     			<span><em>03.</em>Mathematic, Science</span>
     			<h2>What is the most beautiful number, and why?</h2>
@@ -35,39 +35,39 @@
 			</a>
 		</li>
 		<li style="background-image:url('img/01/facebook.png');">
-			<a href="#">
+			<a href="issue/01/when-to-leave-your-current-company.php">
     			<div class="titlewrap">
     				<span><em>04.</em>Career, Advice</span>
     				<h2>How do you know when it's time to leave your current company and move on?</h2>
     			</div>
 			</a>
 		</li>
-		<li style="background-image:url('img/01/other.png');">
-			<a href="#">
+		<li style="background-image:url('img/01/stevejobs-small.jpg');">
+			<a href="issue/01/great-stories-about-steve-jobs.php">
     			<div class="titlewrap">
     				<span><em>05.</em>Technology</span>
     				<h2>What are some great stories about Steve Jobs?</h2>
     			</div>
 			</a>
 		</li>
-		<li style="background-image:url('img/01/other.png');">
-			<a href="#">
+		<li style="background-image:url('img/01/homeless-small.jpg');">
+			<a href="issue/01/homeless-good-strategy-to-cut-costs.php">
     		<div class="titlewrap">
     			<span><em>06.</em>Education</span>
     			<h2>Would becoming homeless be a good strategy to cut costs?</h2>
     		</div>
 			</a>
 		</li>
-		<li style="background-image:url('img/01/facebook.png');">
-			<a href="#">
+		<li style="background-image:url('img/01/sniper-small.jpg');">
+			<a href="issue/01/being-a-sniper.php">
     			<div class="titlewrap">
     				<span><em>07.</em>Career, Advice</span>
     				<h2>What is it like to be a sniper?</h2>
     			</div>
 			</a>
 		</li>
-		<li style="background-image:url('img/01/other.png');">
-			<a href="#">
+		<li style="background-image:url('img/01/mj-small.jpg');">
+			<a href="issue/01/michael-jackson-get-surgery-to-turn-white.php">
     			<div class="titlewrap">
     				<span><em>08.</em>Celebrity, Biology</span>
     				<h2>Why did Michael Jackson get surgery to turn white?</h2>
